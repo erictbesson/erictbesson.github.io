@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<head>
+
+    <script src="assets/jquery.js"></script> 
+    <script>
+	    $( document ).ready(function() {
+		    var imagesforcarousel = [
+		        '<figure><img src="assets/EricVictoryatLePuyenVelay-JustMe2.jpg" width="442" height="596" align="middle"><figcaption>Our Pilgrimage Started in Le Puy en Velay</figcaption></figure>',
+		        '<figure><img src="assets/MeinFrance.jpg" align="middle"><figcaption>We made our way through the mid-Pyrenees</figcaption></figure>',
+		        '<figure><img src="assets/EricVictoryatStJeanaPieddePortCropped.JPG" heigh="961" width="721" align="middle"><figcaption>We finished the French Portion of the Way at St. Jean a Pied de Port</figcaption></figure>'
+		    ];
+
+		    var currentImage = 0;
+
+		    // A function that will call the next image
+		    var nextImage = function() {
+		        if (currentImage < imagesforcarousel.length - 1) {
+		            currentImage = currentImage + 1;
+		            $('.ImageCarousel').html(imagesforcarousel[currentImage]);
+
+		        } else {
+		            currentImage = 0;
+		            $('.ImageCarousel').html(imagesforcarousel[currentImage]);
+		        }
+		    };
+
+		    $('button').click(function() {
+		        nextImage();
+		    });
+		});
+    </script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- <style>
+    body {
+        max-width: 80vw;
+        margin: auto;
+    }
+    .TopRightImage {
+        text-align: right;
+    }
+    .CenterImage {
+        text-align: center;
+    }
+    figure, figcaption {
+        display: block;
+        font-style: italic;
+        font-variant: small-caps;
+    }
+    figcaption {
+        font-style: italic;
+        font-variant: small-caps;
+    }
+    .ImageCarouselBlock {
+        text-align: center;
+        border: 5px solid black;
+        height: 775px;
+        /*
+	background-image: url("assets/saint-jacques.jpg");
+	background-size: no-repeat;
+    background-position: center;
+*/
+    }
+    .p {
+        text-align: left;
+    }
+    .owlpic {
+        float: left;
+    }
+    .quickfactspic {
+        float: right;
+    }
+    .lantern {
+        float: right;
+    }
+    .button {
+        text-align: center;
+    }
+    </style> -->
+
+    <title>About Me</title>
+</head>
+
+<body>
+    <span class="quickfactspic">
+        <div class="TopRightImage">
+            <figure>
+                <img src="assets/MeinFrance.jpg" alt="Eric in the mid-pyrenes" />
+                <figcaption>Me in the mid-pyrenes</figcaption>
+            </figure>
+        </div>
+    </span>
+
+    <br>
+    <br>
+    <br>
+    <h2>Quick Facts</h2>
+
+    Full Name: Eric Toliver Besson
+    <br>Born October 6th, 1984
+    <br>B.A. from Princeton Class of 2007
+    <br>M.A. in Linguistics from NYU in 2013
+    <br>Has an identical twin, Brent Besson
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div style="clear:both;"></div>
+
+    <h1>About Me</h1>
+
+    <div class="CenterImage">
+        <br>
+        <figure>
+            <img src="assets/Mejpg.jpg" />
+            <figcaption>At Princeton</figcaption>
+        </figure>
+    </div>
+
+    <div class="ImageCarouselBlock">
+        <h2>Pictures from my Pilgrimage on the Way of St. James of Compostela</h2>
+
+        <div class="ImageCarousel">
+
+            <figure>
+                <img src="assets/EricVictoryatLePuyenVelay-JustMe2.jpg" width="442" height="596" align="middle">
+                <figcaption>Our Pilgrimage Started in Le Puy en Velay</figcaption>
+            </figure>
+
+        </div>
+        <button>See a different picture!</button>
+
+    </div>
+    <div class="Owls">
+        <h2>Owls</h2>
+
+        <div class="BottomLeftImage">
+
+            <span class="lantern">
+                <figure>
+                    <img src="assets/MyJackOLanternjpg.jpg">
+                    <figcaption>An Owl Jack'o Lantern I carved</figcaption>
+                </figure>
+            </span>
+
+        </div>
+
+
+
+        <p>
+            I've always liked owls. But by accident I came to be associated with owls even more amongst my friends and family.</p>
+
+        <p>It started when I spent a summer studying archaeology in Greece with the American School of Classical Studies, the organization which runs the American archaeological excavation in Greece. I wanted to get souvenirs for my friends and family, so since I spent a lot of time in Athens, I figured I'd get them owl souvenirs. The owl is the symbol of Athena, the patron diety of Athens before Christianity came, and thus a symbol for Athens as well. In fact ancient Athenian coins had a depiction of an owl.</p>
+
+        <p>However, my friends and family didn't understand this connection and just thought I was obsessed with owls. I've explained it to them since but the connection was already made and its stuck.</p>
+
+        <p>I've ran with it ever since.</p>
+
+        <br>
+        <br>
+
+
+        <span class="owlpic">
+            <figure>
+                <img src="assets/OwlCoin.jpg">
+                <figcaption>Ancient Athenian Coin Depicting
+                    <br>an Owl</figcaption>
+            </figure>
+        </span>
+    </div>
+
+
+
+
+
+
+</body>

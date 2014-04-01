@@ -1,0 +1,45 @@
+body {
+    max-width: 80vw;
+    margin: auto;
+}
+.TopRightImage {
+    text-align: right;
+}
+.CenterImage {
+    text-align: center;
+}
+figure, figcaption {
+    display: block;
+    font-style: italic;
+    font-variant: small-caps;
+}
+figcaption {
+    font-style: italic;
+    font-variant: small-caps;
+}
+.ImageCarouselBlock {
+    text-align: center;
+    border: 5px solid black;
+    height: 775px;
+    /*
+background-image: url("assets/saint-jacques.jpg");
+background-size: no-repeat;
+background-position: center;
+*/
+}
+.p {
+    text-align: left;
+}
+.owlpic {
+    float: left;
+}
+.quickfactspic {
+    float: right;
+}
+.lantern {
+    float: right;
+}
+.button {
+    text-align: center;
+}
+
